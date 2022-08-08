@@ -1,0 +1,46 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+#sad-options {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    max-height: 45vh;
+    width: 105%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sad-option {
+    background-color: rgba(211, 211, 211, 0.76);
+    margin-bottom: 1px;
+    /* border-bottom: 1px solid rgba(158, 158, 158, 0.203); */
+    flex: 1 0 5vh;
+    font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.sad-option:hover {
+    filter: brightness(90%);
+    /* box-shadow: 0px 3px 11px 0px #000000; */
+    cursor: pointer;
+}
+
+.sad-option.checked {
+    background-color: rgba(245, 252, 200, 0.76);
+}
+
+#sad-options::-webkit-scrollbar {
+    width: 10px;
+}
+   
+#sad-options::-webkit-scrollbar-track {
+    background-color: gray;
+}
+ 
+#sad-options::-webkit-scrollbar-thumb {
+    background-color: rgb(42, 42, 42);
+    width: 8px;
+}
